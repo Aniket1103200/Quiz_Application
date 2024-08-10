@@ -1,0 +1,91 @@
+# Ignore the target directory in the root and in module subdirectories
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/                   # Ignore the output directory used by IntelliJ
+
+# Eclipse/STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Gradle
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Other Files and Directories
+HELP.md               # Ignoring this file from version control
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store             # macOS
+Thumbs.db             # Windows
+
+# Java specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Generated files
+*.javadoc
+*.wsdl
+*.wspolicy
+*.bak
+
+# Temporary files
+*.swp                 # vi/vim swap files
+*.tmp
+*.temp
+~$*
+
+# Specific IDE artifacts
+/.settings/org.eclipse.jdt.core.prefs
+/.settings/org.eclipse.m2e.core.prefs
+/.settings/org.eclipse.wst.common.project.facet.core.prefs
+/.settings/org.eclipse.jdt.ui.prefs
+/.settings/org.eclipse.core.resources.prefs
+
+# Build files
+/.gradle/
+/.gradle/
+/mvn/
+/mvnw/
+/mvnw.cmd
+
+# MacOS specific files
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thumbnails
+._*
