@@ -26,7 +26,7 @@ import lombok.ToString;
 @Setter
 @ToString(exclude = "result")
 public class User extends BaseEntity {
-	@Column(nullable = false,length = 150)
+	@Column(nullable = false,length = 250)
 	private String name;
 	@Column(nullable = false,length = 150)
 	private String email;
@@ -36,7 +36,7 @@ public class User extends BaseEntity {
 	@Enumerated(EnumType.STRING)
 	private Role role;
 	@Column(nullable = false)
-	private LocalDate Dob;
+	private LocalDate dob;
 	@OneToMany(mappedBy = "user")
 	private List<Result> result = new ArrayList<>();
 	

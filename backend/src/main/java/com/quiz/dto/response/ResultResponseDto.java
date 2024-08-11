@@ -1,42 +1,38 @@
-package com.quiz.entity;
+package com.quiz.dto.response;
 
+import com.quiz.entity.Quiz;
+import com.quiz.entity.User;
 import com.quiz.entity.enums.Grade;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
-@Entity
-@Table(name = "results")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
-public class Result extends BaseEntity {
+public class ResultResponseDto {
 	
-	@Column(nullable = false)
 	private Double score;
-	@Column(nullable = false)
+	
 	private Double maxScore;
-	@Column(nullable = false)
-	@Enumerated(EnumType.STRING)
+	
 	private Grade result;
-    private int notAttemptedQuestions;
+	
+	private String quizTopic;
+	
+	private Long quizId;
+	
+	private int notAttemptedQuestions;
 	
 	private int wrongAnswers;
-	@ManyToOne
-	private Quiz quiz;
-	@ManyToOne
-	private User user;
+	
+	private UserResponseDto user;
 }
