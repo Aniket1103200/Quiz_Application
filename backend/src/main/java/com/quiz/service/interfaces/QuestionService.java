@@ -10,7 +10,7 @@ import com.quiz.util.ApiResponse;
 
 public interface QuestionService {
 
-	public ResponseEntity<ApiResponse<String>> addQuestion(QuestionDto newQuestion);
+	public ResponseEntity<ApiResponse<QuestionResponseDto>> addQuestion(QuestionDto newQuestion);
 	
 	public ResponseEntity<ApiResponse<QuestionResponseDto>> getQuestionById(long id);
 	
