@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.quiz.dto.request.QuestionDto;
+import com.quiz.dto.request.QuizDto;
 import com.quiz.dto.response.QuestionResponseDto;
 import com.quiz.dto.response.QuizResponseDto;
 import com.quiz.service.interfaces.QuizService;
@@ -24,9 +25,9 @@ public class QuizController {
 	
 	
 	@PostMapping  //http://localhost:8080/question    method : POST
-	public ResponseEntity<ApiResponse<QuizResponseDto>> createQuiz(@RequestBody @Valid QuizDto newQuiz)
+	public ResponseEntity<ApiResponse<QuizResponseDto>> createQuiz(@RequestParam String topic,@RequestParam int noOfQuestion)
 	{
-		return myQuiz.createQuiz(newQuiz);
+		return myQuiz.createQuiz(topic,noOfQuestion);
 	}
 	
 	@GetMapping("/{id}")
