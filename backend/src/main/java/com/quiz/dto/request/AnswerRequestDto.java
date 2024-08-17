@@ -17,4 +17,5 @@ import lombok.ToString;
 public class AnswerRequestDto {
 	private long QuizId;
 	private List<String> answers = new ArrayList<>();
+	private long userId;
 }

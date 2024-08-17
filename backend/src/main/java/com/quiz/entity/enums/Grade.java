@@ -1,5 +1,5 @@
 package com.quiz.entity.enums;
 
 public enum Grade {
-	A,B,C,FAIL
+	A,B,C,D,FAIL
 }

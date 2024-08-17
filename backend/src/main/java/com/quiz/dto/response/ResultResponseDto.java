@@ -20,9 +20,9 @@ import lombok.ToString;
 @ToString
 public class ResultResponseDto {
 	
-	private Double score;
+	private double score;
 	
-	private Double maxScore;
+	private double maxScore;
 	
 	private Grade result;
 	
