@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.quiz.dto.request.QuestionDto;
-import com.quiz.dto.request.QuizDto;
+
 import com.quiz.dto.response.QuestionResponseDto;
 import com.quiz.dto.response.QuizResponseDto;
 import com.quiz.service.interfaces.QuizService;
